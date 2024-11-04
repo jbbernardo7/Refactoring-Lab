@@ -28,4 +28,9 @@ public class OrderLine {
     public double getTotal() {
         return getProduct().getPrice() * getQuantity();
     }
+
+    @Override
+    public String toString() {
+        return getProduct().getName() + "(x" + getQuantity() + "): " + (getTotal());
+    }
 }
