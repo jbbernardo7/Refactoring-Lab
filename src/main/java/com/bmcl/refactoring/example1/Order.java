@@ -32,7 +32,7 @@ public class Order {
     private double getTotal() {
         double total = 0;
         for (OrderLine line : lines)
-            total += line.getProduct().getPrice() * line.getQuantity();
+            total += line.getTotal();
         return total;
     }
 }

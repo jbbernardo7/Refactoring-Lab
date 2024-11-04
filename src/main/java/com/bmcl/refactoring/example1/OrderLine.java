@@ -24,4 +24,8 @@ public class OrderLine {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
+
+    public double getTotal() {
+        return getProduct().getPrice() * getQuantity();
+    }
 }
